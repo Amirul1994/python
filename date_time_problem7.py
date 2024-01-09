@@ -53,9 +53,9 @@ def find_day2(year, given_day):
 
     total_weekdays = 7
 
-    difference = (
-                             target_day - converted_date_number + total_weekdays) % total_weekdays
+    difference = (target_day - converted_date_number + total_weekdays) % total_weekdays
     print(difference)
+
     designated_day = converted_date + datetime.timedelta(
         difference)
     print(designated_day)
